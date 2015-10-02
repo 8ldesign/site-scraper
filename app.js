@@ -4,13 +4,6 @@ var xray= require('x-ray')();
 var sHomePageUrl = 'http://www.ae.com/web/index.jsp';
 var outputFilename = 'navJsons/topNav.json';
 
-
-// var xMenu = xray('.menu', [{
-//       submenu: xray('.nav-section',[{
-//         a: '',
-//         href:
-//       }])
-//     }]);
 var xMenu = xray('.menu', ['a']);
 var xTopNav = xray(sHomePageUrl, '.topNav', [{
   menus: xray('.menu','.flyout',[{
@@ -35,14 +28,5 @@ fs.writeFile(outputFilename, JSON.stringify(arr), function(err) {
     }
   });
 });
-  //console.log(JSON.stringify(arr));});
-  //console.log(arr[0].tags[0].flyout[0].navSection[0].navList[1]);});
-// var xTopNav = xray(sHomePageUrl, '.topNav', [{
-//   menu: xray('.menu', 'div', [{
-//    div: xray('.site-top-link','a',[{
-//     a: '',
-//     href: '@href'
-//   }])
-//   }])
-// }])(function(err,arr){ console.log(arr[0].menu[2])});
+
 
