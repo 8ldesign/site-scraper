@@ -1,0 +1,18 @@
+{
+  "name": "site-scraper",
+  "version": "0.0.1",
+  "description": "Small description for pi-view goes here",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": "",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "author": "Krishna Mudragada",
+  "license": "MIT",
+  "dependencies": {
+    "x-ray": "^2.0.0"
+  }
+}
