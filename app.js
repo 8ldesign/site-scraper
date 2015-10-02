@@ -1,7 +1,8 @@
-var topNavExport = require('./topNavExport.js');
+var topNavExport = require('./site/topNav/topNavExport.js');
+
 
 topNavExport.export(function(data){
-    console.log((JSON.stringify(data)));
+  topNavExport.parse(data);
 });
 
 
